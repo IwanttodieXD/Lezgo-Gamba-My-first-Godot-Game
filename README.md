@@ -6,7 +6,7 @@ there's no end goal, you just gamba your mulah
 Game ends when you reach 0 mulah
 
 # How to play
-Click the textbox and enter your bet
+Click the textbox and enter your bet \n
 Press Space to Gamba
 
 # Where is the things?
