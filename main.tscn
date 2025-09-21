@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=3 uid="uid://csr3gtxe4kqwl"]
+
+[ext_resource type="Script" uid="uid://daysvlx43uonm" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(-2, -17)
+script = ExtResource("1_ig7tw")
+
+[node name="Lnum1" type="Label" parent="."]
+offset_left = 509.0
+offset_top = 328.0
+offset_right = 643.0
+offset_bottom = 365.0
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="Lnum1"]
+position = Vector2(66, 16)
+
+[node name="Lnum2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = -0.219
+anchor_top = -1.632
+anchor_right = -0.219
+anchor_bottom = -1.632
+offset_left = 311.0
+offset_top = 329.0
+offset_right = 447.0
+offset_bottom = 359.0
+pivot_offset = Vector2(88, 1)
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="Lnum3" type="Label" parent="."]
+offset_left = 716.0
+offset_top = 332.0
+offset_right = 848.0
+offset_bottom = 356.0
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="status" type="Label" parent="."]
+offset_left = 490.0
+offset_top = 438.0
+offset_right = 624.0
+offset_bottom = 466.0
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="turns" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 32.0
+offset_right = 143.0
+offset_bottom = 56.0
+pivot_offset = Vector2(66, 7)
+text = "turn  :"
+
+[node name="wins" type="Label" parent="."]
+offset_left = 11.0
+offset_top = 55.0
+offset_right = 143.0
+offset_bottom = 79.0
+text = "wins  :"
+
+[node name="loses" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 78.0
+offset_right = 144.0
+offset_bottom = 102.0
+text = "loses :"
+
+[node name="mulah" type="Label" parent="."]
+offset_left = 469.0
+offset_top = 546.0
+offset_right = 578.0
+offset_bottom = 570.0
+pivot_offset = Vector2(66, 7)
+text = "mulah  :"
+
+[node name="Lbet" type="Label" parent="."]
+offset_left = 469.0
+offset_top = 482.0
+offset_right = 601.0
+offset_bottom = 506.0
+pivot_offset = Vector2(66, 7)
+text = "bet  :"
+
+[node name="bet" type="LineEdit" parent="."]
+offset_left = 431.0
+offset_top = 512.0
+offset_right = 729.0
+offset_bottom = 543.0
+placeholder_text = "Place your bets here! :D"
+alignment = 1
+
+[connection signal="text_submitted" from="bet" to="." method="_on_bet_text_submitted"]

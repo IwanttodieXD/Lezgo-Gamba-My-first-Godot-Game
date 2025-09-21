@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://csr3gtxe4kqwl"]
+
+[ext_resource type="Script" uid="uid://daysvlx43uonm" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Lnum1" type="Label" parent="."]
+offset_left = 509.0
+offset_top = 328.0
+offset_right = 643.0
+offset_bottom = 365.0
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="Lnum1"]
+position = Vector2(66, 16)
+
+[node name="Lnum2" type="Label" parent="Lnum1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.219
+anchor_top = -1.632
+anchor_right = -0.219
+anchor_bottom = -1.632
+offset_left = -168.654
+offset_top = 61.384
+offset_right = -32.654
+offset_bottom = 91.384
+pivot_offset = Vector2(424, 101)
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="Lnum3" type="Label" parent="Lnum1/Lnum2"]
+offset_left = 405.0
+offset_top = 3.0
+offset_right = 537.0
+offset_bottom = 27.0
+text = "THIS IS A LABEL"
+horizontal_alignment = 1
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 467.0
+offset_top = 458.0
+offset_right = 694.0
+offset_bottom = 499.0
